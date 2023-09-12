@@ -1,0 +1,231 @@
+/* Add some basic styling to the table */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Use space-between to separate left and right */
+  align-items: center; /* Vertically align items */
+  width: auto;
+  padding: 0 20px; /* Add some padding to the header */
+  background-color: #ffffff; /* Add a background color to the header */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* Define the animation */
+@keyframes titleAnimation {
+  0% {
+    color: #000; /* Starting color */
+    transform: scale(1); /* Initial scale */
+  }
+  50% {
+    color: #00968F; /* Midway color */
+    transform: scale(1.1); /* Scaled up halfway */
+  }
+  100% {
+    color: #000; /* Ending color */
+    transform: scale(1); /* Back to original scale */
+  }
+}
+
+/* Apply the animation to the "Coding Challenge" part */
+h1 span {
+  animation: titleAnimation 2s linear infinite; /* 2 seconds duration, linear timing, infinite loop */
+}
+
+
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+span {
+  color: #00968F;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.huissier {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #00968F;
+  width: auto;
+  height: 35px;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin-right: 20px; /* Add margin to separate left and right */
+}
+
+.huissIcon {
+  color: white;
+  width: 24px;
+  height: 20px;
+}
+
+.huissier p {
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+.leftheader {
+  cursor: pointer;
+}
+
+.LeftPartHeader {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  gap: 20px;
+}
+
+.RightPartHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* Add gap between items in the right header */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Style the table header row */
+table th {
+  background-color: #00968F; /* Header background color */
+  color: #fff; /* Header text color */
+  text-align: left;
+  padding: 12px; /* Header padding */
+  font-weight: bold;
+}
+
+/* Style the table data rows */
+table td {
+  border: 1px solid #ddd;
+  padding: 10px; /* Cell padding */
+}
+
+/* Alternate row background color for better readability */
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for pagination container */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  position: absolute;
+  bottom: 10; /* Position at the bottom */
+  right: 0; /* Position at the right */
+}
+
+/* Style for pagination buttons */
+.pagination button {
+  background-color: #007bff; /* Background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px 12px; /* Padding inside the button */
+  margin: 4px; /* Margin between buttons */
+  cursor: pointer; /* Add cursor on hover */
+}
+
+/* Style for the left arrow button */
+.pagination button:first-child {
+  background-color: #333; /* Different background color */
+}
+
+/* Hover effect for buttons */
+.pagination button:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+/* Active button style (current page) */
+.pagination button.active {
+  background-color: #555; /* Darker background color */
+}
+
+/* Style for button icons */
+.pagination button svg {
+  vertical-align: middle; /* Align the icon vertically */
+  margin-right: 4px; /* Add some spacing between icon and text */
+}
+/* index.css */
+
+/* Style for the search container */
+/* index.css */
+
+/* Style for the search container */
+/* Style for the search fields container */
+/* Style for the search fields container */
+.SearchFields {
+  display: flex;
+  flex-direction: row; /* Display elements in a column layout */
+
+  
+}
+.Conteneur{
+  background-color: white; /* White background */
+  padding: 20px; /* Padding around the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* White shadow */
+  border-radius: 4px;
+  width: auto; /* Adjust as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+/* Style for the search container */
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  width: 100%; /* Take up the full width */
+  margin-bottom: 10px; /* Adjust spacing between inputs */
+}
+
+/* Style for the threshold container */
+.threshold {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  width: 100%; /* Take up the full width */
+  margin-bottom: 10px; /* Adjust spacing between inputs */
+  margin-left: 10px;
+}
+
+/* Style for the search input */
+.search input, .threshold input {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  width: 400px;
+}
+
+/* Style for the search icon */
+.search svg, .threshold svg {
+  font-size: 20px;
+  color: #666;
+}
+
+/* Style for the min-max power labels */
+.PowerLabels {
+  text-align: center; /* Center-align the labels */
+  margin-top: 10px; /* Add space between inputs and labels */
+}
